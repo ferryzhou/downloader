@@ -25,25 +25,27 @@ class Downloader
   
 end
 
-def filename_from_url(url)
+def filename_from_url(url, encoding = 'gbk')
   p url
   uri = URI.parse(url)
-  URI.decode(File.basename(uri.path))
+  s = URI.decode(File.basename(uri.path))
+  s.force_encoding(encoding).encode("utf-8")
 end
 
 # given a file containing urls and names, 
 # extract the corresponding contents and store to local files
 class UrlArchiever
   
-  def initialize(archieves_root, write_mode = 'wb')
+  def initialize(archieves_root, encoding = 'gbk', write_mode = 'wb')
     @archieves_root = archieves_root
     @write_mode = write_mode
+    @encoding = encoding
     FileUtils.mkdir_p(archieves_root)
   end
   
   def read_and_save_url(url, name = nil)
     puts 'extracting ' + url + ' ...............'
-    name ||= filename_from_url(url)
+    name ||= filename_from_url(url, @encoding)
     begin
       local_path = File.join(@archieves_root, name)
       p "local path: #{local_path} ..."
