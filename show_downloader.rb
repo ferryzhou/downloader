@@ -1,14 +1,12 @@
 # encoding: UTF-8
-require './tasks_runner'
-require './url_task'
+require_relative 'downloader'
 
 tasks = [
-['分手快乐', 'http://api.ning.com/files/69dnaFh5bEl0ePTptkTXPK1nB5*2o1BH6r3XyO78r2-A7hTCkBu1x7AgVzY*hWXD7q23YqUeKosF4Yem1HhvnZ1a8rVMuYow/nWiKmaR6jFwx.mp3'],
-['对不起我爱你', 'http://du.xmanyao.info/COFFdD0xMzM0NTMwNDg4Jmk9NzEuMTc4LjYwLjU0JnU9U29uZ3MvdjIvZmFpbnRRQy81Zi9kZi9kNjdlOWM3OWIzOTFmZmVlNzRjYzRmOWFkMmJhZGY1Zi5tcDMmbT0xZjQ0NjlhOTYzNDQzYjM1NjE3OWQ3MmI5Yzc4NDVkZSZ2PWRvd24mbj221LK7xvDO0rCuxOMmcz3Bur6yyOMmcD1u.mp3'],
+  'http://down1.pingshu8.com:8000/3/ps/%C1%F5%C0%BC%B7%BC_%C2%DE%C2%ED%BE%FC%CD%C5%CF%FB%CA%A7%D6%AE%C3%D5/%C1%F5%C0%BC%B7%BC_%C2%DE%C2%ED%BE%FC%CD%C5%CF%FB%CA%A7%D6%AE%C3%D5_001.mp3'
 ];
 
 thread_count = 2;
-archieves_root = 'H:/Results/downloader';
+archieves_root = 'results';
 
-runner = TasksRunner.new(archieves_root, 'mp3', thread_count);
-runner.run(arrays_to_tasks(tasks))
+runner = Downloader.new(archieves_root, thread_count);
+runner.run(tasks)

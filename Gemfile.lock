@@ -1,0 +1,10 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    thread (0.1.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  thread
