@@ -7,16 +7,51 @@ def cn_utf_to_gbk_url(name)
   URI.encode(name.encode('gbk'))
 end
 
-def crawl_pingshu8(name, count)
-
-uname = cn_utf_to_gbk_url(name)
-tasks = (1..count).collect { |i| "http://down1.pingshu8.com:8000/3/ps/#{uname}/#{uname}_#{'%03d' % i}.mp3" }
-
-thread_count = 5;
-archieves_root = File.join('results', name);
-
-runner = Downloader.new(archieves_root, thread_count);
-runner.run(tasks)
+def gbk_url_to_cn_utf(url)
+  URI.decode(url).force_encoding('gbk').encode("utf-8")
 end
 
-crawl_pingshu8('刘兰芳_罗马军团消失之谜', 67)
+def get_pingshu8_url(dir_str, uname, i, format_ind)  
+  format = "%0#{format_ind}d"
+  "http://down1.pingshu8.com:8000/#{format_ind}/ps/#{dir_str}/#{uname}_#{format % i}.mp3"
+end
+
+def crawl_pingshu8(name, count, format_ind, hui=false)
+
+uname = cn_utf_to_gbk_url(name)
+dir_str = uname
+dir_str += cn_utf_to_gbk_url("(#{count}回)") if hui
+tasks = (1..count).collect { |i| get_pingshu8_url(dir_str, uname, i, format_ind) }
+
+crawl_all(tasks, name)
+end
+
+def crawl_all(tasks, name)
+  thread_count = 5;
+  archieves_root = File.join('results', name);
+
+  runner = Downloader.new(archieves_root, thread_count);
+  runner.run(tasks)
+end
+
+def crawl_pingshu8_by_sample_url(sample_url, count)
+  full_name = gbk_url_to_cn_utf(File.basename(sample_url, ".mp3"))
+  index = full_name.rindex('_')
+  name = full_name[0...index]
+  num_str = full_name[index+1..-1]
+  p "num_str: #{num_str}"
+  format = "%0#{num_str.size}d"
+  base_url = sample_url[0...(-4 - num_str.size)]
+  p 'base_url: ' + base_url
+  tasks = (1..count).collect { |i| base_url + format % i + ".mp3" }
+  crawl_all(tasks, name)
+end
+
+
+#crawl_pingshu8('刘兰芳_罗马军团消失之谜', 67, 3, false)
+#crawl_pingshu8('刘兰芳_小将岳云', 41, 2, true)
+#crawl_pingshu8('刘兰芳_呼延庆', 30, 2, true) #wrong
+#http://down1.pingshu8.com:8000/3/ps/%C1%F5%C0%BC%B7%BC_%BB%EC%CA%C0%C4%A7%CD%F5%B3%CC%D2%A7%BD%F0/%C1%F5%C0%BC%B7%BC_%BB%EC%CA%C0%C4%A7%CD%F5%B3%CC%D2%A7%BD%F0_001.mp3
+#crawl_pingshu8('刘兰芳_混世魔王程咬金', 100, 3, false)
+sample_url = "http://down1.pingshu8.com:8000/1/ps/%C1%F5%C0%BC%B7%BC_%CE%F7%CC%C6%D1%DD%D2%E5/%C1%F5%C0%BC%B7%BC_%CE%F7%CC%C6%D1%DD%D2%E5_001.mp3"
+crawl_pingshu8_by_sample_url(sample_url, 100)
