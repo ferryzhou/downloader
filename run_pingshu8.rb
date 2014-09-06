@@ -53,5 +53,9 @@ end
 #crawl_pingshu8('刘兰芳_呼延庆', 30, 2, true) #wrong
 #http://down1.pingshu8.com:8000/3/ps/%C1%F5%C0%BC%B7%BC_%BB%EC%CA%C0%C4%A7%CD%F5%B3%CC%D2%A7%BD%F0/%C1%F5%C0%BC%B7%BC_%BB%EC%CA%C0%C4%A7%CD%F5%B3%CC%D2%A7%BD%F0_001.mp3
 #crawl_pingshu8('刘兰芳_混世魔王程咬金', 100, 3, false)
-sample_url = "http://down1.pingshu8.com:8000/1/ps/%C1%F5%C0%BC%B7%BC_%CE%F7%CC%C6%D1%DD%D2%E5/%C1%F5%C0%BC%B7%BC_%CE%F7%CC%C6%D1%DD%D2%E5_001.mp3"
-crawl_pingshu8_by_sample_url(sample_url, 100)
+#sample_url = "http://down1.pingshu8.com:8000/1/ps/%C1%F5%C0%BC%B7%BC_%CE%F7%CC%C6%D1%DD%D2%E5/%C1%F5%C0%BC%B7%BC_%CE%F7%CC%C6%D1%DD%D2%E5_001.mp3"
+#sample_url = "http://down1.pingshu8.com:8000/3/ps/%C1%F5%C0%BC%B7%BC_%B7%AE%C0%E6%BB%A8/%C1%F5%C0%BC%B7%BC_%B7%AE%C0%E6%BB%A8_001.mp3"; count=75;
+#sample_url = "http://down1.pingshu8.com:8000/1/ps/%C1%F5%C0%BC%B7%BC_%CB%AB%C7%B9%C0%CF%CC%AB%C6%C5/%C1%F5%C0%BC%B7%BC_%CB%AB%C7%B9%C0%CF%CC%AB%C6%C5_001.mp3"; count=47;
+#sample_url = "http://down1.pingshu8.com:8000/3/ps/%C1%F5%C0%BC%B7%BC_%D3%DD%CB%B4%B4%F3%B4%AB/%C1%F5%C0%BC%B7%BC_%D3%DD%CB%B4%B4%F3%B4%AB_001.mp3"; count=200;
+sample_url = "http://down01.pingshu8.com:8000/3/ps/%C1%F5%C0%BC%B7%BC_%D1%E0%C8%AA%CF%E3%B4%AB%C6%E6/%C1%F5%C0%BC%B7%BC_%D1%E0%C8%AA%CF%E3%B4%AB%C6%E6_01.mp3"; count=54;
+crawl_pingshu8_by_sample_url(sample_url, count)
