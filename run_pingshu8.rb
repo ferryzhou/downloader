@@ -57,5 +57,25 @@ end
 #sample_url = "http://down1.pingshu8.com:8000/3/ps/%C1%F5%C0%BC%B7%BC_%B7%AE%C0%E6%BB%A8/%C1%F5%C0%BC%B7%BC_%B7%AE%C0%E6%BB%A8_001.mp3"; count=75;
 #sample_url = "http://down1.pingshu8.com:8000/1/ps/%C1%F5%C0%BC%B7%BC_%CB%AB%C7%B9%C0%CF%CC%AB%C6%C5/%C1%F5%C0%BC%B7%BC_%CB%AB%C7%B9%C0%CF%CC%AB%C6%C5_001.mp3"; count=47;
 #sample_url = "http://down1.pingshu8.com:8000/3/ps/%C1%F5%C0%BC%B7%BC_%D3%DD%CB%B4%B4%F3%B4%AB/%C1%F5%C0%BC%B7%BC_%D3%DD%CB%B4%B4%F3%B4%AB_001.mp3"; count=200;
-sample_url = "http://down01.pingshu8.com:8000/3/ps/%C1%F5%C0%BC%B7%BC_%D1%E0%C8%AA%CF%E3%B4%AB%C6%E6/%C1%F5%C0%BC%B7%BC_%D1%E0%C8%AA%CF%E3%B4%AB%C6%E6_01.mp3"; count=54;
-crawl_pingshu8_by_sample_url(sample_url, count)
+#sample_url = "http://down01.pingshu8.com:8000/3/ps/%C1%F5%C0%BC%B7%BC_%D1%E0%C8%AA%CF%E3%B4%AB%C6%E6/%C1%F5%C0%BC%B7%BC_%D1%E0%C8%AA%CF%E3%B4%AB%C6%E6_01.mp3"; count=54;
+#sample_url = "http://down01.pingshu8.com:8000/1/ps/%C1%F5%C0%BC%B7%BC_%BA%F4%BC%D2%BD%AB/%C1%F5%C0%BC%B7%BC_%BA%F4%BC%D2%BD%AB_001.mp3"; count=93;
+#sample_url = "http://down01.pingshu8.com:8000/1/ps/%C1%F5%C0%BC%B7%BC_%BA%EC%C2%A5%C3%CE/%C1%F5%C0%BC%B7%BC_%BA%EC%C2%A5%C3%CE_001.mp3"; count=108;
+#sample_url = "http://down01.pingshu8.com:8000/1/ps/%C1%F5%C0%BC%B7%BC_%D5%D4%BF%EF%D8%B7%D1%DD%D2%E5/%C1%F5%C0%BC%B7%BC_%D5%D4%BF%EF%D8%B7%D1%DD%D2%E5_001.mp3"; count=100;
+#sample_url = "http://down01.pingshu8.com:8000/2/ps/%C1%F5%C0%BC%B7%BC_%D0%C2%CB%AE%E4%B0%BA%F3%B4%AB/%C1%F5%C0%BC%B7%BC_%D0%C2%CB%AE%E4%B0%BA%F3%B4%AB_001.mp3"; count=160;
+#sample_url = "http://down01.pingshu8.com:8000/1/ps/%C1%F5%C0%BC%B7%BC_%CE%E5%B7%EF%B3%AF%D1%F4%B5%B6/%C1%F5%C0%BC%B7%BC_%CE%E5%B7%EF%B3%AF%D1%F4%B5%B6_001.mp3"; count=110;
+#sample_url = "http://down01.pingshu8.com:8000/3/ps/%C1%F5%C0%BC%B7%BC_%D6%D0%BB%AA%BA%C3%C8%CB%CB%CC/%C1%F5%C0%BC%B7%BC_%D6%D0%BB%AA%BA%C3%C8%CB%CB%CC_001.mp3"; count=105;
+#sample_url = "http://down01.pingshu8.com:8000/3/ps/%C1%F5%C0%BC%B7%BC_%BB%B0%CB%B5%CC%A9%C9%BD/%C1%F5%C0%BC%B7%BC_%BB%B0%CB%B5%CC%A9%C9%BD_001.mp3"; count=100;
+#sample_url = "http://down01.pingshu8.com:8000/1/ps/%C1%F5%C0%BC%B7%BC_%D0%C2%D4%C0%B7%C9%B4%AB/%C1%F5%C0%BC%B7%BC_%D0%C2%D4%C0%B7%C9%B4%AB_001.mp3"; count=161;
+#sample_url = "http://down01.pingshu8.com:8000/3/ps/%C1%F5%C0%BC%B7%BC_%B7%E7%B3%BE%CF%C0%D2%E5%CD%BC/%C1%F5%C0%BC%B7%BC_%B7%E7%B3%BE%CF%C0%D2%E5%CD%BC_001.mp3"; count=97;
+#sample_url = "http://down01.pingshu8.com:8000/2/ps/%CC%EF%C1%AC%D4%AA_%B0%FC%B9%AB%B0%B8/%CC%EF%C1%AC%D4%AA_%B0%FC%B9%AB%B0%B8_01.mp3"; count=90;
+#sample_url = "http://down01.pingshu8.com:8000/1/ps/%CC%EF%C1%AC%D4%AA_%BA%A3%C7%E0%CC%EC/%CC%EF%C1%AC%D4%AA_%BA%A3%C7%E0%CC%EC_001.mp3"; count=35;
+#sample_url = "http://down01.pingshu8.com:8000/3/ps/%CC%EF%C1%AC%D4%AA_%C8%FD%CF%C0%CE%E5%D2%E5/%CC%EF%C1%AC%D4%AA_%C8%FD%CF%C0%CE%E5%D2%E5_001.mp3"; count=100;
+#sample_url = "http://down01.pingshu8.com:8000/1/ps/%CC%EF%C1%AC%D4%AA_%C1%F5%D0%E3%B4%AB/%CC%EF%C1%AC%D4%AA_%C1%F5%D0%E3%B4%AB_001.mp3"; count=70;
+sample_urls = [
+  ["http://down01.pingshu8.com:8000/1/ps/%C1%F5%C0%BC%B7%BC_%B0%D7%C4%B5%B5%A4%D0%D0%B6%AF_%B5%E7%CA%D3%B0%E6(60%BB%D8)/%C1%F5%C0%BC%B7%BC_%B0%D7%C4%B5%B5%A4%D0%D0%B6%AF_%B5%E7%CA%D3%B0%E6(60%BB%D8)_01.mp3", 60],
+  ["http://down01.pingshu8.com:8000/1/ps/%C1%F5%C0%BC%B7%BC_%B4%F3%CC%C6%CF%C0%C5%AE/%C1%F5%C0%BC%B7%BC_%B4%F3%CC%C6%CF%C0%C5%AE_001.mp3", 62],
+  ]
+
+sample_urls.each do |pair|
+  crawl_pingshu8_by_sample_url(pair[0], pair[1])
+end
