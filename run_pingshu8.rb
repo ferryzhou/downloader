@@ -76,8 +76,25 @@ sample_urls = [
 # ["http://down01.pingshu8.com:8000/1/ys/%CE%D2%B5%C4%B8%B8%C7%D7%B5%CB%D0%A1%C6%BD/%CE%D2%B5%C4%B8%B8%C7%D7%B5%CB%D0%A1%C6%BD_01.mp3", 58]
 # ["http://down01.pingshu8.com:8000/1/ys/%CA%A5%BE%AD%B9%CA%CA%C2-%BE%C9%D4%BC/%CA%A5%BE%AD%B9%CA%CA%C2-%BE%C9%D4%BC_001.mp3", 150],
 # ["http://down01.pingshu8.com:8000/1/ys/%CA%A5%BE%AD%B9%CA%CA%C2-%D0%C2%D4%BC/%CA%A5%BE%AD%B9%CA%CA%C2-%D0%C2%D4%BC_001.mp3", 120],
-["http://down03.pingshu8.com:8000/03/ys/%C3%AB%D4%F3%B6%AB(12%BC%AF)/01.%B7%E1%B1%AE%D4%DA%C8%CB%C3%F1%D0%C4%D6%D0.mp3", 12]
+# ["http://down01.pingshu8.com:8000/3/ys/%C3%AB%D4%F3%B6%AB%B4%AB/%C3%AB%D4%F3%B6%AB%B4%AB_01.mp3", 82]
+# ["http://down01.pingshu8.com:8000/2/ys/%D0%EC%D6%BE%C4%A6%B5%C4%C7%B0%CA%C0%BD%F1%C9%FA/%D0%EC%D6%BE%C4%A6%B5%C4%C7%B0%CA%C0%BD%F1%C9%FA_01.mp3", 30],
+#["http://down02.pingshu8.com:8000/02/ys/%D2%BB%C9%FA%CA%D8%BA%F2/%D2%BB%C9%FA%CA%D8%BA%F2_01.mp3", 31],
+#["http://down01.pingshu8.com:8000/3/ys/%CE%D2%B0%D1%C7%E0%B4%BA%CF%D7%B8%F8%C4%E3/%CE%D2%B0%D1%C7%E0%B4%BA%CF%D7%B8%F8%C4%E3_01.mp3", 20],
+#["http://down02.pingshu8.com:8000/02/ys/%B9%A6%B7%F2%BB%CA%B5%DB%C0%EE%D0%A1%C1%FA%B4%AB/%B9%A6%B7%F2%BB%CA%B5%DB%C0%EE%D0%A1%C1%FA%B4%AB_01.mp3", 34],
+#["http://down01.pingshu8.com:8000/3/ys/%BA%C0%B7%C5%C5%AE%BB%CA%CE%E4%D4%F2%CC%EC/%BA%C0%B7%C5%C5%AE%BB%CA%CE%E4%D4%F2%CC%EC_01.mp3", 22],
+#["http://down01.pingshu8.com:8000/3/ys/%BA%B7%B7%CB/%BA%B7%B7%CB_01.mp3", 11],
+#["http://down02.pingshu8.com:8000/02/ys/%B3%C9%C1%FA%B4%AB/%B3%C9%C1%FA%B4%AB_001.mp3", 41],
+#["http://down02.pingshu8.com:8000/02/ys/%D2%D5%CC%B3%C6%E6%DD%E2%D5%D4%C0%F6%C8%D8/%D2%D5%CC%B3%C6%E6%DD%E2%D5%D4%C0%F6%C8%D8_01.mp3", 36],
+#["http://down02.pingshu8.com:8000/02/ys/%D2%BB%B8%F6%C8%CB%B5%C4%D5%F1%D0%CB%A1%B6%D6%B1%C3%E6%C6%D5%BE%A9%A1%B7/%D2%BB%B8%F6%C8%CB%B5%C4%D5%F1%D0%CB%A1%B6%D6%B1%C3%E6%C6%D5%BE%A9%A1%B7_001.mp3", 28],
+#["http://down02.pingshu8.com:8000/02/ys/%CD%F5%C2%E5%B1%F6/%CD%F5%C2%E5%B1%F6_001.mp3", 30],
+#["http://down02.pingshu8.com:8000/02/ys/%B3%C2%D2%DD%B7%C9%B4%AB/%B3%C2%D2%DD%B7%C9%B4%AB_001.mp3", 20],
+#["http://down02.pingshu8.com:8000/02/ys/%CA%AF%C6%C0%C3%B7%B4%AB/%CA%AF%C6%C0%C3%B7%B4%AB_001.mp3", 38],
+#["http://down02.pingshu8.com:8000/02/ys/%CF%E3%B2%DD%C3%C0%C8%CB%B5%CB%C0%F6%BE%FD/%CF%E3%B2%DD%C3%C0%C8%CB%B5%CB%C0%F6%BE%FD_01-05.mp3", 80],
+#["http://down02.pingshu8.com:8000/02/ys/%D4%E7%C4%EA%D6%DC%B6%F7%C0%B4/%D4%E7%C4%EA%D6%DC%B6%F7%C0%B4_01.mp3", 42],
+#["http://down03.pingshu8.com:8000/03/ys/%CC%EC%B5%D8%C6%E6%CD%F5-%BA%BA%CE%E4%B4%F3%B5%DB(53%BC%AF)/%CC%EC%B5%D8%C6%E6%CD%F5-%BA%BA%CE%E4%B4%F3%B5%DB_01.mp3", 53],
+["http://down02.pingshu8.com:8000/02/ys/%CF%E3%B2%DD%C3%C0%C8%CB%B5%CB%C0%F6%BE%FD/%CF%E3%B2%DD%C3%C0%C8%CB%B5%CB%C0%F6%BE%FD_01-05.mp3", 80],
   ]
+
 
 sample_urls.each do |pair|
   crawl_pingshu8_by_sample_url(pair[0], pair[1])
